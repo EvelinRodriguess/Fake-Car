@@ -1,24 +1,13 @@
-import { ref } from 'vue';
-import { defineStore } from 'pinia';
+import axios from 'axios';
 
-import ProductService from '@/services/product';
-const productService = new ProductService();
-
-export const useProductStore = defineStore('product', () => {
-  const products = ref([]);
-
-  async function getProducts() {
-    products.value = await productService.getProducts();
+export default class ProductService {
+  async getProducts() {
+    const response = await axios.get('/products/');
+    return response.data.results;
   }
 
-  async function getProductsByCategory(category_id) {
-    products.value = await productService.getProductByCategory(category_id);
+  async getProductByCategory(category_id) {
+    const response = await axios.get(`/products/?category__id=${category_id}`);
+    return response.data.results;
   }
-
-  async function createProduct(product) {
-    await productService.createProduct(product);
-    getProducts();
-  }
-
-  return { products, createProduct, getProducts, getProductsByCategory };
-});
+}
