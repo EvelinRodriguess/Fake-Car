@@ -26,24 +26,24 @@ const router = createRouter({
           component: () => import('@/views/LoginView.vue'),
         },
         {
-          path: "/categorias",
-          name: "categorias",
-          component: CategoriaView,
-        },
-        {
           path: "/acessorios",
           name: "acessorios",
-          component: AcessorioView,
+          component: () => import ('@/views/AcessoriosView.vue'),
+        },
+        {
+          path: "/categoria",
+          name: "categoria",
+          component: () => import ('@/views/CategoriaView.vue'),
         },
         {
           path: "/cor",
           name: "cor",
-          component: CorView,
+          component: () => import ('@/views/CorView.vue'),
         },
         {
           path:"/marca",
           name: "marca",
-          component: MarcaView,
+          component: () => import ('@/views/MarcaView.vue'),
         },
       ],
     },
