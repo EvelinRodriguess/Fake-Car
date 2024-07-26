@@ -13,15 +13,21 @@
      </div>
      <div class="divider" />
      <div class="menu">
-       <router-link to="/">
-         <i class="icon mdi mdi-account-circle-outline" /> Perfil
-       </router-link>
-       <router-link to="/">
-         <i class="icon mdi mdi-cart-outline" /> Carrinho
-       </router-link>
-       <router-link to="/login">
-         <i class="icon mdi mdi-account" /> Login
-       </router-link>
+      <router-link to="/login">
+        <i class="icon mdi mdi-login" /> Login
+      </router-link>
+      <router-link to="/acessorios">
+        <i class="icon mdi mdi-car-parking-lights" /> Acessórios
+      </router-link>
+      <router-link to="/categoria">
+        <i class="icon mdi mdi-car-back" /> Categorias
+      </router-link>
+      <router-link to="/cor">
+        <i class="icon mdi mdi-format-color-fill" /> Cores
+      </router-link>
+      <router-link to="/marca">
+        <i class="icon mdi mdi-car-convertible" /> Marcas
+      </router-link>
      </div>
    </div>
    <logo-title />

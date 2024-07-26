@@ -10,14 +10,23 @@ onBeforeRouteUpdate(() => {
 </script>
 <template>
   <div id="footerMenu" :style="{ display: showMenu ? 'block' : 'none' }">
-    <RouterLink to="/">
-      <i class="mdi mdi-home-outline" />
-      Home
+    <RouterLink to="/cor">
+      <i class="mdi mdi-format-color-fill" />
+      Cores
     </RouterLink>
-    <RouterLink to="/login">
-      <i class="mdi mdi-account" />
-      Login
+    <RouterLink to="/marca">
+      <i class="mdi mdi-car-convertible" />
+      Marcas
     </RouterLink>
+    <RouterLink to="/acessorio">
+      <i class="mdi mdi-car-parking-lights" />
+      Acessórios
+    </RouterLink>
+    <RouterLink to="/categoria">
+      <i class="mdi mdi-car-back" />
+      Categorias
+    </RouterLink>
+
   </div>
   <div class="icons">
     <RouterLink to="/">
