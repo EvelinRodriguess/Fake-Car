@@ -13,6 +13,9 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
     </div>
     <div class="divider" />
     <div class="menu">
+      <router-link to="/perfil">
+        <i class="icon mdi mdi-account-circle-outline" /> Perfil
+      </router-link>
       <router-link to="/login">
         <i class="icon mdi mdi-login" /> Login
       </router-link>

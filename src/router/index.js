@@ -40,6 +40,11 @@ const router = createRouter({
           name: "marca",
           component: () => import ('@/views/MarcaView.vue'),
         },
+        {
+          path: "/perfil",
+          name: "Perfil",
+          component: () => import('@/views/PerfilView.vue'),
+        },
       ],
     },
   ],
