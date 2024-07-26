@@ -17,16 +17,16 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
         <i class="icon mdi mdi-login" /> Login
       </router-link>
       <router-link to="/acessorios">
-        <i class="icon mdi mdi-car-back" /> Acessórios
+        <i class="icon mdi mdi-car-parking-lights" /> Acessórios
       </router-link>
       <router-link to="/categoria">
         <i class="icon mdi mdi-car-back" /> Categorias
       </router-link>
       <router-link to="/cor">
-        <i class="icon mdi mdi-car-back" /> Cores
+        <i class="icon mdi mdi-format-color-fill" /> Cores
       </router-link>
       <router-link to="/marca">
-        <i class="icon mdi mdi-car-back" /> Marcas
+        <i class="icon mdi mdi-car-convertible" /> Marcas
       </router-link>
       
     </div>
